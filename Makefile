@@ -1,6 +1,6 @@
 CC ?= clang
-CFLAGS ?= -O3 -Wall -Wextra -Wno-unknown-pragmas
-LDFLAGS=
+CFLAGS += -O3 -Wall -Wextra -Wno-unknown-pragmas
+# LDFLAGS=
 LIBS=-lm -lpthread -lz
 ZOPFLI=zopfli/src/zopfli/
 ZOP=deflate.o blocksplitter.o tree.o lz77.o cache.o hash.o util.o squeeze.o katajainen.o
